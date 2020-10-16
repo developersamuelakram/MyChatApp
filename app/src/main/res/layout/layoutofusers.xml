@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:civ_border_width="1dp"
+        app:civ_border_color="@android:color/black"
+        android:id="@+id/image_user_userfrag"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/image_user_userfrag"
+        android:textStyle="bold"
+        android:id="@+id/username_userfrag"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp"
+        android:text="User Name"/>
+
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:id="@+id/image_online"
+        app:civ_border_width="10dp"
+        app:civ_border_color="#05df29"
+        android:visibility="gone"
+        android:layout_marginLeft="-15dp"
+        android:src="@drawable/ic_launcher_foreground"
+        android:layout_below="@id/username_userfrag"
+        android:layout_toEndOf="@id/image_user_userfrag"
+        android:layout_toRightOf="@id/image_user_userfrag" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:id="@+id/image_offline"
+        app:civ_border_width="10dp"
+        android:visibility="gone"
+        app:civ_border_color="@android:color/darker_gray"
+        android:layout_marginLeft="-15dp"
+        android:src="@drawable/ic_launcher_foreground"
+        android:layout_below="@id/username_userfrag"
+        android:layout_toEndOf="@id/image_user_userfrag"
+        android:layout_toRightOf="@id/image_user_userfrag" />
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Message"
+        android:layout_marginTop="2dp"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:id="@+id/lastMessage"
+        android:layout_below="@id/username_userfrag"
+        android:layout_marginLeft="60dp"/>
+
+
+</RelativeLayout>
+

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:padding="8dp"
+    android:layout_height="wrap_content">
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/chat_image"
+        android:src="@drawable/user"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:padding="8dp"
+        android:id="@+id/show_message"
+        android:text="Hello"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_toRightOf="@id/chat_image"
+        android:background="@drawable/background_left"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_Seen"
+        android:visibility="gone"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/show_message" />
+
+
+
+
+
+
+</RelativeLayout>
